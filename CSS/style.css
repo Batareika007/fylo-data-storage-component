@@ -1,0 +1,137 @@
+/* -----global style---- */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    color: hsl(243, 100%, 93%);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+/* ### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) */
+
+
+.container {
+    margin: 40vh auto;
+    max-width: 1440px;
+}
+
+.flexbox{
+    display: flex;
+}
+
+/* ------ section one ----- */
+.section_one {
+    background-color: hsl(228, 56%, 26%);
+    width: 348px;
+    height: 200px;
+    border-radius: 9px 100px 9px 9px;
+    padding-top: 40px;
+    padding-left: 38px;
+    padding-right: 132px;
+}
+
+.top {
+    margin-bottom: 33px;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------- section two ------------- */
+
+.section_two{
+    padding: 40px;
+    margin-left: 30px;
+    height: 154px;
+    width: 540px;
+    background-color:hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.range{
+    display: flex;
+    align-items: center;
+    width: 458px;
+    height: 20px;
+    background: #151D4B;
+    border-radius: 143.5px;
+    margin-bottom: 20px;
+}
+
+.range_two{
+    width: 340px;
+    height: 16px;
+    margin-left: 3px;
+    background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100%),
+    #151D4B;
+    border-radius: 143.5px;
+}
+
+.range_circle{
+    position: relative;
+    left: 325px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #FEFFFF;
+}
+
+.white_box{
+    /* padding: 20px; */
+    position: relative;
+    left: 280px;
+    bottom: 70px;
+    width: 179px;
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 11px;
+    color: black;
+    
+}
+
+.white_box>.bold{
+    font-size: 2rem;
+}
