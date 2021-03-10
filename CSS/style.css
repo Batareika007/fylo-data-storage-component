@@ -16,7 +16,7 @@ body {
     color: hsl(243, 100%, 93%);
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
 
@@ -35,11 +35,19 @@ body {
 
 .container {
     margin: 40vh auto;
-    max-width: 1440px;
+    max-width: 1000px;
+    /* min-width: 1100px; */
 }
 
-.flexbox{
+.flexbox {
+    /* margin: 50px; */
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+
+
 }
 
 /* ------ section one ----- */
@@ -79,59 +87,60 @@ body {
 
 /* ------- section two ------------- */
 
-.section_two{
+.section_two {
     padding: 40px;
-    margin-left: 30px;
     height: 154px;
     width: 540px;
-    background-color:hsl(228, 56%, 26%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: hsl(228, 56%, 26%);
 }
 
-.range{
-    display: flex;
-    align-items: center;
+/*  ------- range section --------- */
+
+.range {
     width: 458px;
     height: 20px;
     background: #151D4B;
     border-radius: 143.5px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.range_two{
+.range_two {
     width: 340px;
-    height: 16px;
-    margin-left: 3px;
-    background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100%),
-    #151D4B;
+    height: 14px;
+    background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100%), #151D4B;
     border-radius: 143.5px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 4px;
 
-.range_circle{
-    position: relative;
-    left: 325px;
-    top: 2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    background: #FEFFFF;
-}
-
-.white_box{
-    /* padding: 20px; */
-    position: relative;
-    left: 280px;
-    bottom: 70px;
-    width: 179px;
-    height: 72px;
-    background: #FFFFFF;
-    border-radius: 11px;
-    color: black;
     
 }
 
-.white_box>.bold{
+.range_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #FEFFFF;
+    margin-right: 2px;
+}
+
+/* ---------- end range section ----------- */
+
+.white_box {
+    display: inline-block;
+    position:relative;
+    left: 200px;
+    bottom: 70px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 11px;
+    color: black;
+}
+
+
+.white_box>.bold {
     font-size: 2rem;
 }
