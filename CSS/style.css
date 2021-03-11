@@ -36,15 +36,15 @@ body {
 .container {
     margin: 40vh auto;
     max-width: 1000px;
-    /* min-width: 1100px; */
+
 }
 
 .flexbox {
-    /* margin: 50px; */
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: wrap;
+
 
 
 
@@ -59,6 +59,7 @@ body {
     padding-top: 40px;
     padding-left: 38px;
     padding-right: 132px;
+    /* color: hsl(229, 7%, 55%); */
 }
 
 .top {
@@ -85,19 +86,26 @@ body {
 }
 
 
-/* ------- section two ------------- */
+/* ------------- section two ------------------- */
 
 .section_two {
     padding: 40px;
     height: 154px;
     width: 540px;
     background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 9px;
+
+
 }
 
 /*  ------- range section --------- */
 
 .range {
-    width: 458px;
+    width: 100%;
+    /* max-width: 458px; */
     height: 20px;
     background: #151D4B;
     border-radius: 143.5px;
@@ -106,7 +114,7 @@ body {
 }
 
 .range_two {
-    width: 340px;
+    width: 75%;
     height: 14px;
     background: linear-gradient(90deg, #FFA399 0%, #FF4D97 100%), #151D4B;
     border-radius: 143.5px;
@@ -115,7 +123,7 @@ body {
     justify-content: flex-end;
     margin-left: 4px;
 
-    
+
 }
 
 .range_circle {
@@ -128,19 +136,70 @@ body {
 
 /* ---------- end range section ----------- */
 
+.white_box_container {
+    position: absolute;
+    top: 40%;
+    display: inline-flex;
+    align-self: flex-end;
+
+}
+
 .white_box {
-    display: inline-block;
-    position:relative;
-    left: 200px;
-    bottom: 70px;
-    text-align: center;
-    padding: 10px 20px;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    width: 179px;
+    height: 72px;
+    align-items: center;
     background: #FFFFFF;
     border-radius: 11px;
     color: black;
 }
 
-
 .white_box>.bold {
     font-size: 2rem;
+}
+
+.section_two_bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* ------------ mobile design ------------  */
+
+@media(max-width: 375px) {
+    body {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        margin: 126px auto;
+    }
+
+    .flexbox {
+        margin: 0 auto;
+        height: 400px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section_one {
+        width: 324px;
+        padding-right: 107px;
+    }
+
+    .section_two {
+        height: 160px;
+        width: 324px;
+    }
+
+    .white_box_container {
+        align-self: center;
+        top: 55%;
+    
+    }
 }
