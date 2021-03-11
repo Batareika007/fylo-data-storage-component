@@ -34,7 +34,7 @@ body {
 
 
 .container {
-    margin: 40vh auto;
+    margin: 126px auto;
     max-width: 1000px;
 
 }
@@ -138,7 +138,7 @@ body {
 
 .white_box_container {
     position: absolute;
-    top: 40%;
+    top: 15%;
     display: inline-flex;
     align-self: flex-end;
 
@@ -178,7 +178,7 @@ body {
 
     .white_box_container {
         align-self: center;
-        top: 80%;
+        top: 55%;
 
     }
 }
