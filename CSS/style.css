@@ -165,14 +165,32 @@ body {
     justify-content: space-between;
 
 }
+/* ---------- tablet ------------------- */
+
+@media(max-width:903px){
+    .flexbox{
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 400px;
+    }
+
+    .white_box_container {
+        align-self: center;
+        top: 80%;
+
+    }
+}
 
 
 /* ------------ mobile design ------------  */
 
-@media(max-width: 375px) {
+@media(max-width: 400px) {
     body {
         background-image: url(../images/bg-mobile.png);
-        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat
     }
 
     .container {
@@ -180,11 +198,11 @@ body {
     }
 
     .flexbox {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         height: 400px;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
     }
 
     .section_one {
